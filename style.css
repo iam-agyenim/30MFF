@@ -300,6 +300,7 @@ body.light-mode .theme-toggle {
 .vid {
     padding-bottom: 10px;
      width: 100%;  /* Let the video take up 100% of its container */
+     max-width: 1200px;
 }
 
 /* Contact Section Styling */
