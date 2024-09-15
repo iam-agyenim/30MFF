@@ -356,10 +356,8 @@ body.light-mode .theme-toggle {
         margin-bottom: 40px;
     }
 }
-img, video {
-    max-width: 100%;
-    height: auto;
-}
+
+
 
 @media (max-width: 768px) {
     /* Adjustments for tablets */
