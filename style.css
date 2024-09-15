@@ -149,12 +149,18 @@ body.light-mode .theme-toggle {
 .about-section1 {
     background-color: var(--background-color); /* Use variable for background */
     color: var(--text-color); /* Use variable for text */
-    padding: 60px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 0 60px var(--box-shadow-color);  /* Subtle shadow effect */
     margin-top: 10%;
     margin-bottom: 5%;
+   
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack content vertically */
+    text-align: center
 }
 
 /* Heading Styling */
@@ -297,11 +303,14 @@ body.light-mode .theme-toggle {
 }
 
 /* Video Styling */
-.vid {
-    padding-bottom: 10px;
-     width: 100%;  /* Let the video take up 100% of its container */
-     max-width: 1200px;
-}
+#video {
+    width: 80%;
+    margin: 0 auto; /* Center the div horizontally */
+    box-shadow: 0 0 60px var(--box-shadow-color); /* Apply the box shadow using the variable */
+    padding: 10px; /* Add padding to create space between the shadow and the content */
+    background: #fff; /* Ensure background for shadow visibility */
+    display: block; /* Ensure it's a block element */
+  }
 
 /* Contact Section Styling */
 .contact-section {
@@ -360,10 +369,7 @@ body.light-mode .theme-toggle {
     .img-1{
         margin-left:15%;
     }
-    iframe {
-        width: 100%;
-        height: auto;
-    }
+    
 }
 
 @media (max-width: 768px) {
@@ -382,14 +388,16 @@ body.light-mode .theme-toggle {
     .button-container {
         flex-direction: column;
     }
-    iframe {
-        width: 100%;
-        height: auto;
-    }
-    button1{
-        margin-top: 15px;
-    }
+   
     
+    .button1{
+        margin-top: 15px;
+       width: 50%;
+       padding: 10px 20px;
+       display: inline-block; 
+    margin-left: 25%;  
+ }
+
 }
 
 @media (max-width: 480px) {
@@ -405,14 +413,14 @@ body.light-mode .theme-toggle {
     .about-section {
         padding: 20px;
     }
-    iframe {
-        width: 100%;
-        height: 300px;
-    }
+    
     .timeline-item {
         padding: 10px;
     }
-     button1{
+    .button1{
         margin-top: 15px;
-    }
+       width: 50%;
+       padding: 10px 20px;
+       display: inline-block; 
+    margin-left: 25%;   }
 }
