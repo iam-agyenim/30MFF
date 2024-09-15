@@ -1,0 +1,349 @@
+/* Light Theme */
+body.light-mode {
+    --background-color: #ffffff;
+    --text-color: black;
+    --link-color: #00557a;
+    --nav-link-color: black;
+    --spinner-color: #640D6B;
+    --box-shadow-color: #640D6B;
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    --background-color: #333333; /* Dark background */
+    --text-color: white;
+    --link-color: #00abf0;
+    --nav-link-color: white;
+    --spinner-color: #00abf0;
+    --box-shadow-color: #00abf0;
+    background-color: var(--background-color); /* Use dynamic variable */
+    color: var(--text-color); /* Dynamic text color */
+    transition: background-color 0.5s, color 0.5s;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* General Link Styling */
+a {
+    color: var(--link-color);
+    transition: color 0.5s;
+}
+
+/* General Link Styling */
+a {
+    color: var(--link-color);
+    transition: color 0.5s;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent; /* Transparent for particles effect to show */
+}
+
+.navbar.dark-mode {
+    background-color: #333;
+    color: var(--text-color);
+}
+
+.navbar-brand.dark-mode {
+    color: var(--text-color) !important;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: var(--nav-link-color) !important;
+    transition: color 0.5s;
+}
+
+.nav-link.dark-mode {
+    color: white !important;
+}
+
+/* Spinner Grow */
+.spinner-grow {
+    color: var(--spinner-color);
+    transition: color 0.5s;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #640D6B;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 24px;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #00abf0;
+    color: white;
+}
+
+body.light-mode .theme-toggle {
+    background-color: #640D6B;
+    color: white;
+}
+
+/* Particles Effect */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Ensure particles stay behind other content */
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 100px; /* Adds space so content doesn't overlap navbar */
+    text-align: center;
+}
+
+/* Image Styling */
+.img-1 {
+    width: 70%;
+    height: 490px;
+    margin-left: 15%;
+    border-radius: 24px;
+    box-shadow: 0 0 60px var(--box-shadow-color); 
+    object-fit: cover;
+}
+
+/* About Section Styling */
+.about-section {
+    background-color: var(--background-color); /* Use variable for background */
+    color: var(--text-color); /* Use variable for text */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 60px var(--box-shadow-color);  /* Subtle shadow effect */
+    margin-top: 10%;
+}
+
+
+.about-section1 {
+    background-color: var(--background-color); /* Use variable for background */
+    color: var(--text-color); /* Use variable for text */
+    padding: 60px 0px 0px 0px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 60px var(--box-shadow-color);  /* Subtle shadow effect */
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+/* Heading Styling */
+.h1-, .h1-1 {
+    font-family: 'Georgia', serif; /* Elegant serif font for headings */
+    font-size: 36px; /* Large heading size */
+    margin-bottom: 20px;
+    color: #00abf0; /* Accent color for headings */
+    text-transform: uppercase; /* Make the heading all uppercase */
+    letter-spacing: 2px; /* Space between letters */
+}
+
+.h1-1 {
+    margin-top: -7%;
+}
+
+/* Paragraph Styling in About Section */
+.about-section p {
+    font-family: 'Arial', sans-serif; /* Sans-serif font for paragraphs */
+    font-size: 18px; /* Font size for body text */
+    line-height: 1.8; /* Increase line height for better readability */
+    color: black; /* Light gray text color */
+    margin: 20px 0;
+}
+.about-section p{
+    font-family: 'Arial', sans-serif; /* Sans-serif font for paragraphs */
+    font-size: 18px; /* Font size for body text */
+    line-height: 1.8; /* Increase line height for better readability */
+    color: var(--text-color); /* Light gray text color */
+    margin: 20px 0;
+}
+
+.about-section a {
+    color: #00abf0; /* Links inside the about section */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-section a:hover {
+    color: #ffd700; /* Hover effect for links */
+}
+
+/* Button Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 40px 10px;
+    font-size: 18px;
+    border-radius: 24px;
+    box-shadow: 0 2px 4px var(--box-shadow-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #003f5c;
+}
+
+.btn-secondary {
+    background-color: black;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #003f5c;
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 6px;
+    background-color: #00abf0;
+    height: 90%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.timeline.completed::before {
+    background-color: #0073e6; /* Change to filled color */
+    transition: height 0.5s ease;
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%; /* Full width */
+    padding: 20px 0;
+    box-shadow: 0 0 60px var(--box-shadow-color); /* Blue shadow */
+    margin-bottom: 40px; /* Adds space between timeline items */
+}
+
+.timeline-content {
+    background-color: #fff;
+    width: 80%; /* Set a width so the content doesn't stretch too much */
+    margin: 0 auto; /* Center content within the full-width container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.timeline-item.completed .timeline-content {
+    background-color: rgba(0, 171, 240, 0.1);
+    border-left: 5px solid #00abf0;
+}
+
+/* Event Info Styling */
+.event-info {
+    color: #333;
+}
+
+.event-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #0073e6;
+}
+
+.timeline-content img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Video Styling */
+.vid {
+    padding-bottom: 10px;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    position: relative;
+    background-color: var(--background-color); /* Use dynamic background color */
+    color: var(--text-color); /* Use dynamic text color */
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 60px var(--box-shadow-color);  /* Subtle shadow effect */
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.contact-heading {
+    font-family: 'Georgia', serif; /* Elegant serif font for headings */
+    font-size: 36px; /* Large heading size */
+    color: var(--text-color); /* Dynamic heading color */
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-family: 'Arial', sans-serif; /* Sans-serif font for paragraphs */
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color); /* Dynamic paragraph text color */
+    margin-bottom: 40px;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: var(--text-color); /* Dynamic icon color */
+    font-size: 32px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #00abf0; /* Hover effect with accent color */
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
