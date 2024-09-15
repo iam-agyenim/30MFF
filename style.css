@@ -358,6 +358,10 @@ body.light-mode .theme-toggle {
     .img-1{
         margin-left:15%;
     }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
