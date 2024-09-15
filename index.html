@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Character encoding for the document -->
     <meta charset="UTF-8" />
+    <!-- Viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
     <title>iam_agyenim</title>
+
+    <!-- External JavaScript library for particle effects -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
-
     
-
+    <!-- Link to custom stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- Bootstrap CSS for responsive layout and styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <!-- Font Awesome CSS for icon fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- Tailwind CSS for utility-first styling -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Boxicons CSS for additional icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Font Awesome Kit for additional icon support -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts for Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    
+    <!-- Additional styling (incorrectly closed style tag) -->
     </style>
   </head>
 
@@ -22,6 +34,7 @@
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
+        <!-- Brand name with a loading spinner -->
         <p class="navbar-brand fs-6 fw-bold">
           <div class="spinner-grow mr-1 spin" role="status">
             <span class="visually-hidden">Loading...</span>
@@ -29,13 +42,14 @@
           ARTS CENTER
         </p>
 
-        <div class="collapse navbar-collapse justify-content-end" >
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav fs-6">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#about">About |</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="#event">Events |</a>
+              <a class="nav-link" href="#event">Events |</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#video">Video |</a>
@@ -48,139 +62,137 @@
       </div>
     </nav>
 
-    <!-- Particles effect background -->
+    <!-- Background effect for particles -->
     <div id="particles-js"></div>
 
-    <!-- Image Container -->
+    <!-- Video Container -->
     <div class="container">
+      <!-- Embedded video with autoplay and looping -->
       <video class="img-1" autoplay muted playsinline loop>
         <source src="arts.MP4" type="video/mp4">
         Your browser does not support the video tag.
-    </video>
-      <!-- Button Section -->
-      <div class="button-container button1" style="margin-top: 4%; ">
-        <button onclick="explore()"  class="btn btn-primary me-3">Explore</button>
-        <button onclick="discover()" class="btn btn-secondary">Discover</button>
+      </video>
+      <!-- Button section with Explore and Discover buttons -->
+      <div class="button-container" style="margin-top: 4%;">
+        <button onclick="explore()" class="btn btn-primary me-3 button1">Explore</button>
+        <button onclick="discover()" class="btn btn-secondary button1">Discover</button>
       </div>
     </div>
 
-  
     <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="container">
-      <h1 class="h1-">ABOUT</h1>
-      <p>
-        The NYU Abu Dhabi Art Center is a vibrant hub for the performing arts, located at the heart of NYUAD's Saadiyat Island campus. 
-        It serves as a platform for international and local artists to showcase their work, while providing students and the broader community 
-        with access to world-class performances and workshops. Since its inception, the center has hosted numerous artists and productions, 
-        ranging from theater, music, and dance to multimedia art installations.
-      </p>
-      <p>
-        By bridging the local and global art communities, the NYUAD Art Center plays a critical role in the cultural landscape of Abu Dhabi, 
-        promoting cross-cultural dialogue and artistic expression in a diverse and ever-evolving world.
-      </p>
-    </div>
-  </section>
+    <section id="about" class="about-section">
+      <div class="container">
+        <h1 class="h1-">ABOUT</h1>
+        <p>
+          The NYU Abu Dhabi Art Center is a vibrant hub for the performing arts, located at the heart of NYUAD's Saadiyat Island campus. 
+          It serves as a platform for international and local artists to showcase their work, while providing students and the broader community 
+          with access to world-class performances and workshops. Since its inception, the center has hosted numerous artists and productions, 
+          ranging from theater, music, and dance to multimedia art installations.
+        </p>
+        <p>
+          By bridging the local and global art communities, the NYUAD Art Center plays a critical role in the cultural landscape of Abu Dhabi, 
+          promoting cross-cultural dialogue and artistic expression in a diverse and ever-evolving world.
+        </p>
+      </div>
+    </section>
   
-  <section id="event" class="events-section">
-    <div class="container">
-      <h1 class="h1-">Upcoming Events</h1>
-      <div class="timeline" id="timeline">
-        <!-- First Event on the Left -->
-        <div class="timeline-item left" data-date="2024-09-12">
-          <div class="timeline-content">
-            <img src="p1.jpg" alt="Event 1" class="event-img" />
-            <div class="event-info">
-              <h3>Gaye Su Akyol | TootArd</h3>
-              <p> September 19-20 @ 8:00pm, 2024</p>
+    <!-- Events Section -->
+    <section id="event" class="events-section">
+      <div class="container">
+        <h1 class="h1-">Upcoming Events</h1>
+        <div class="timeline" id="timeline">
+          <!-- Event 1 on the left -->
+          <div class="timeline-item left" data-date="2024-09-12">
+            <div class="timeline-content">
+              <img src="p1.jpg" alt="Event 1" class="event-img" />
+              <div class="event-info">
+                <h3>Gaye Su Akyol | TootArd</h3>
+                <p> September 19-20 @ 8:00pm, 2024</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Second Event on the Right -->
-        <div class="timeline-item right" data-date="2024-10-03">
-          <div class="timeline-content">
-            <img src="arts5.jpeg" alt="Event 2" class="event-img" />
-            <div class="event-info">
-              <h3>Augurs - Chrystèle Khodr</h3>
-             <p>Septmeber 28-29 @ 7:30pm, 2024</p>
+          <!-- Event 2 on the right -->
+          <div class="timeline-item right" data-date="2024-10-03">
+            <div class="timeline-content">
+              <img src="arts5.jpeg" alt="Event 2" class="event-img" />
+              <div class="event-info">
+                <h3>Augurs - Chrystèle Khodr</h3>
+                <p>September 28-29 @ 7:30pm, 2024</p>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <!-- Third Event on the Left -->
-        <div class="timeline-item left" data-date="2024-11-15">
-          <div class="timeline-content">
-            <img src="p3.jpg" alt="Event 3" class="event-img" />
-            <div class="event-info">
-              <h3>La Lezione di Teatro</h3>
-              <p> October 11 @ 7:30pm, 2024</p>
+          
+          <!-- Event 3 on the left -->
+          <div class="timeline-item left" data-date="2024-11-15">
+            <div class="timeline-content">
+              <img src="p3.jpg" alt="Event 3" class="event-img" />
+              <div class="event-info">
+                <h3>La Lezione di Teatro</h3>
+                <p> October 11 @ 7:30pm, 2024</p>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <div class="timeline-item right" data-date="2024-10-03">
-          <div class="timeline-content">
-            <img src="arts3.jpeg" alt="Event 2" class="event-img" />
-            <div class="event-info">
-              <h3>In The Fall</h3>
-              <p> November 15 @ 7:30pm, 2024</p>
+          
+          <!-- Event 4 on the right -->
+          <div class="timeline-item right" data-date="2024-10-03">
+            <div class="timeline-content">
+              <img src="arts3.jpeg" alt="Event 2" class="event-img" />
+              <div class="event-info">
+                <h3>In The Fall</h3>
+                <p> November 15 @ 7:30pm, 2024</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+  
+    <!-- Video Embed Section -->
+    <div style="width: 80%;" id="video">
+      <iframe src="https://drive.google.com/file/d/1ZVI58TroK4vwBSA3HQ6bncoJix6yyze6/preview" 
+              width="100%" 
+              height="480" 
+              allow="autoplay" 
+              style="border:none;">
+      </iframe>
+    </div>
 
-    </div>
-  </section>
-  
-  <section id="video" class="about-section1" >
-    <div class="container vid">
-      <h1 class="h1-1">Exploring The Arts Center</h1>
-    
-        
-        <iframe src="https://drive.google.com/file/d/1ZVI58TroK4vwBSA3HQ6bncoJix6yyze6/preview" width="1250" height="480" allow="autoplay" ></iframe>
-   
-    </div>
-  </section>
-  
-  <section class="contact-section" id="contact">
-    <div class="container">
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
         <h2 class="contact-heading">Contact Me</h2>
         <p class="contact-description">Connect with us through our social media channels!</p>
         
+        <!-- Social Media Icons -->
         <div class="social-icons">
-            <a href="https://www.facebook.com/share/yFbYdUpMhke8KiX7/?mibextid=LQQJ4d" class="social-icon" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://x.com/Agyenim73210404" class="social-icon" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/iam_agyenim?igsh=bHZiaXBzOTFsbHFz&utm_source=qr
-            " class="social-icon" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/richmond-agyenim-boateng-651949284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
+          <a href="https://www.facebook.com/share/yFbYdUpMhke8KiX7/?mibextid=LQQJ4d" class="social-icon" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/Agyenim73210404" class="social-icon" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/iam_agyenim?igsh=bHZiaXBzOTFsbHFz&utm_source=qr" class="social-icon" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/richmond-agyenim-boateng-651949284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Font Awesome Icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
+    <!-- Font Awesome Icons Script -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!-- Theme Toggle Button -->
-   <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme" onclick="toggleTheme()">
+    <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme" onclick="toggleTheme()">
       <span class="material-symbols-outlined">contrast</span>
-  </button>
+    </button>
 
-    
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
-   
-
-    
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
