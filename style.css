@@ -354,7 +354,11 @@ body.light-mode .theme-toggle {
     }
 }
 
-@media(min:
+@media(min-width: 800px){
+    .img-1{
+        margin-left:15%;
+    }
+}
 
 @media (max-width: 768px) {
     /* Adjustments for tablets */
@@ -375,6 +379,9 @@ body.light-mode .theme-toggle {
     iframe {
         width: 100%;
         height: auto;
+    }
+    button{
+        margin-top: 10px;
     }
     
 }
@@ -398,5 +405,8 @@ body.light-mode .theme-toggle {
     }
     .timeline-item {
         padding: 10px;
+    }
+     button{
+        margin-top: 10px;
     }
 }
