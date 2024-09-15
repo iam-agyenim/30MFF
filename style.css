@@ -347,17 +347,14 @@ body.light-mode .theme-toggle {
     transform: scale(1.2); /* Slight zoom effect on hover */
 }
 @media (max-width: 768px) {
-    .timeline::before {
-        left: 10%; /* Move the timeline to the left */
-    }
-
+   
     .timeline-item {
         width: 100%;
         margin-bottom: 40px;
     }
 }
 
-
+@media(min:
 
 @media (max-width: 768px) {
     /* Adjustments for tablets */
@@ -379,6 +376,7 @@ body.light-mode .theme-toggle {
         width: 100%;
         height: auto;
     }
+    
 }
 
 @media (max-width: 480px) {
