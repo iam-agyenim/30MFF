@@ -299,6 +299,8 @@ body.light-mode .theme-toggle {
 /* Video Styling */
 .vid {
     padding-bottom: 10px;
+     width: 100%;  /* Let the video take up 100% of its container */
+    max-width: 100%
 }
 
 /* Contact Section Styling */
