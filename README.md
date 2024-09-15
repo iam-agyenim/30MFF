@@ -1,2 +1,2 @@
 # 30MFF
-This is a wWebpage to host the video about the NYUAD Art Center
+This is a Webpage to host the video about the NYUAD Art Center
