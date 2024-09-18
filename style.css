@@ -50,13 +50,11 @@ a {
 
 /* Navbar Styling */
 .navbar {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    background-color: transparent; /* Transparent for particles effect to show */
 }
-
 .navbar.dark-mode {
     background-color: #333;
     color: var(--text-color);
