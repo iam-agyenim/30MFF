@@ -6,8 +6,7 @@ This project is a responsive webpage for the NYU Abu Dhabi Art Center, showcasin
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Future Improvements](#future-improvements)
+
 
 ## Overview
 
@@ -32,11 +31,3 @@ The NYUAD Art Center webpage highlights events and performances at the center, a
 - **JavaScript**: Adds interactivity, such as theme toggling and event handlers.
 - **Particles.js**: For animated background effects.
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-2. Navigate to the project folder:
-   ```bash
-   cd your-repo-name
