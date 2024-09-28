@@ -1,4 +1,4 @@
-# NYU Abu Dhabi Art Center Webpage
+# 30MFF Web page -  NYU Abu Dhabi Art Center Webpage
 
 This project is a responsive webpage for the NYU Abu Dhabi Art Center, showcasing upcoming events, videos, and contact details, with a modern design and dynamic theme toggling.
 
