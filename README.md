@@ -31,4 +31,4 @@ The NYUAD Art Center webpage highlights events and performances at the center, a
 - **JavaScript**: Adds interactivity, such as theme toggling and event handlers.
 - **Particles.js**: For animated background effects.
 
-[Check out](https://iam-agyenim.github.io/Comic/index.html) directly in your browser.
+[Check out](https://iam-agyenim.github.io/30MFF/) directly in your browser.
