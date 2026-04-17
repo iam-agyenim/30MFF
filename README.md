@@ -1,5 +1,7 @@
 # 30MFF Web page 
 
+By **Richmond**
+
 This project is a responsive webpage for the NYU Abu Dhabi Art Center, showcasing upcoming events, videos, and contact details, with a modern design and dynamic theme toggling.
 
 ## Table of Contents
