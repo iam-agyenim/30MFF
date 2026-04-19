@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | ARTS CENTER</title>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+
+    <link href="gallery.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg" style="position: fixed; top: 0;">
+      <div class="container-fluid">
+        <p class="navbar-brand fs-6 fw-bold">
+          <div class="spinner-grow mr-1 spin" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          ARTS CENTER
+        </p>
+
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav fs-6">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#event">Events |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#video">Video |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="gallery.html">Gallery |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="particles-js"></div>
+
+    <section class="gallery-section">
+      <div class="container">
+        <h1 class="h1-">Gallery</h1>
+        <p style="font-family: 'Arial', sans-serif; font-size: 18px; line-height: 1.8; color: var(--text-color);">
+          A collection of moments from the NYU Abu Dhabi Art Center events and performances.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="p1.jpg" alt="Gaye Su Akyol and TootArd" />
+            <div class="gallery-caption">Gaye Su Akyol | TootArd</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="arts5.jpeg" alt="Augurs - Chrystèle Khodr" />
+            <div class="gallery-caption">Augurs — Chrystèle Khodr</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="p3.jpg" alt="La Lezione di Teatro" />
+            <div class="gallery-caption">La Lezione di Teatro</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="arts3.jpeg" alt="In The Fall" />
+            <div class="gallery-caption">In The Fall</div>
+          </div>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+      </div>
+    </section>
+
+    <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme" onclick="toggleTheme()">
+      <span class="material-symbols-outlined">contrast</span>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
